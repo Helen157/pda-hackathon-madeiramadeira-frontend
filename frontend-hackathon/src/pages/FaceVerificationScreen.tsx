@@ -55,34 +55,34 @@ export default function FaceVerificationScreen() {
   }
 
                                                     /* TELA 2 — ABERTURA DA CÂMERA */
-  return (
+return (
     <div className="min-h-screen bg-black relative overflow-hidden">
-
-      {/* Vídeo */}
+      
+      {/* 1. Vídeo (Câmera) */}
       <video
         ref={videoRef}
         autoPlay
         playsInline
         muted
+        // Ocupa a tela inteira e corta o excesso (object-cover)
         className="absolute inset-0 w-full h-full object-cover"
       />
 
-      {/* Máscara escura */}
-      <div className="absolute inset-0 bg-black/70" />
-
-      {/* Oval vazado */}
+      {/* 2. Máscara Circular */}
       <div
-        className="absolute top-1/2 left-1/2 w-64 h-96 -translate-x-1/2 -translate-y-1/2 rounded-full border-4 border-orange-500"
+        className="absolute top-1/2 left-1/2 w-[300px] h-[400px] -translate-x-1/2 -translate-y-1/2 rounded-full border-4 border-white z-10"
         style={{
-          boxShadow: '0 0 0 9999px rgba(0,0,0,0.7)'
+          // Fundamental: Aqui vai criar o efeito de vazamento usando uma sombra externa massiva
+          boxShadow: '0 0 0 9999px rgba(0,0,0,0.7)',
         }}
       />
 
-      {/* Texto auxiliar */}
-      <div className="absolute bottom-10 w-full text-center text-white text-sm">
+      {/* 3. Texto Auxiliar (Instrução Dinâmica) */}
+      <div className="absolute bottom-10 w-full text-center text-white text-base font-bold z-20">
         Centralize seu rosto!
+        {/* Aqui entrará o texto dinâmico (ex: "Olhe para a esquerda") após a validação */}
       </div>
 
     </div>
-  )
+  );
 }
