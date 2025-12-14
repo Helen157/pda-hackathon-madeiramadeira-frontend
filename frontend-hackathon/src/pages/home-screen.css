@@ -1,0 +1,20 @@
+#home-root {
+  background-color: #FFFFFF; 
+  height: 100vh;   
+  display: flex;
+  flex-direction: column;    
+  justify-content: center;  
+  align-items: center;  
+  gap: 300px;
+}
+
+.home-logo {
+  width: 250px;  
+  max-width: 80%;
+}
+
+.termos{
+    color:rgb(12, 12, 12);
+    font-size: 20px;
+}
+
