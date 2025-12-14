@@ -1,4 +1,4 @@
-import Home from './pages/home-screen'
+import Identity from './pages/identity'
 import './App.css'
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <div>
-        <Home/>
+        <Identity/>
       </div>
     </>
   )

@@ -1,6 +1,5 @@
 import logo from '../assets/logo.png';
 import Button from '../components/button';
-import './home-screen.css'; 
 
 function Home() {
   const handleButtonClick = () => {
@@ -9,7 +8,7 @@ function Home() {
   
   return (
     <div id="home-root">
-        <img src={logo} alt="Logo" className="home-logo" />
+        <img src={logo} alt="Logo" className="home" />
         <Button 
           label="Entrar" 
           onClick={handleButtonClick} 
