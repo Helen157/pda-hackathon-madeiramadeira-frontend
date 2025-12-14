@@ -26,7 +26,7 @@ export default function FaceVerificationScreen() {
     startCamera()
   }, [started])
 
-                                               /*TELA 1 — INSTRUÇÕES PARA VERIFICAÇÃO FACIAL*/
+                                               /*Passo 1 — INSTRUÇÕES PARA VERIFICAÇÃO FACIAL*/
   if (!started) {
     return (
       <div className="min-h-screen bg-[#F4FAF0] flex flex-col justify-between p-6">
@@ -54,7 +54,7 @@ export default function FaceVerificationScreen() {
     )
   }
 
-                                                    /* TELA 2 — ABERTURA DA CÂMERA */
+                                                    /* Passo 2 — ABERTURA DA CÂMERA */
 return (
     <div className="min-h-screen bg-black relative overflow-hidden">
       
