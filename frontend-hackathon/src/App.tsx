@@ -1,4 +1,5 @@
 import Identity from './pages/identity'
+import FaceVerificationScreen from './pages/FaceVerificationScreen'
 import './App.css'
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <>
       <div>
         <Identity/>
+        <FaceVerificationScreen/>
       </div>
     </>
   )
