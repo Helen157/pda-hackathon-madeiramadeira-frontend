@@ -76,7 +76,6 @@ const Region = () => {
           Defina sua área de atuação para receber demandas próximas a você.
         </p>
 
-        {/* ESTADO */}
         <div className="select-card">
           <span className="select-icon">≡</span>
           <select
@@ -98,7 +97,6 @@ const Region = () => {
           </select>
         </div>
 
-        {/* CIDADE */}
         <div className="select-card">
           <span className="select-icon">≡</span>
           <select
@@ -118,7 +116,6 @@ const Region = () => {
             ))}
           </select>
         </div>
-
         <Button label="PRÓXIMO" onClick={handleNext} fullWidth />
       </div>
     </div>
