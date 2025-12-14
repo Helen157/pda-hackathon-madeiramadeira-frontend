@@ -1,0 +1,43 @@
+/* Remova todas as regras #home-root se você não as estiver usando.
+   Se estiver usando, use apenas as regras abaixo para o container da região. */
+
+
+/* Container Principal para o Layout de Notebook (TOP-ALIGNED) */
+.region-container {
+  background-color: #FFFFFF;
+  min-height: 100vh;
+  width: 100vw;
+ 
+  /* CONFIGURAÇÃO DE FLEXBOX PRINCIPAL (Corrigido: Adiciona GAP aqui!) */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Alinha no topo */
+
+}
+
+
+/* Configura o Bloco de Conteúdo (Limita a largura em telas grandes) */
+
+
+
+/* Título */
+.title {
+    color: #333;
+    margin-bottom: 40px; /* Mantém o espaço abaixo do título */
+    font-size: 32px;
+    text-align: left;
+}
+
+
+/* Onde estava a distância entre os campos (input-group) */
+.input-group {
+    margin-bottom: 15px; /* Diminua este valor para aproximar os campos */
+}
+
+
+/* Onde estava a distância antes do botão */
+.button-wrapper {
+    margin-top: 15px; /* Diminua este valor para aproximar o botão */
+}
+

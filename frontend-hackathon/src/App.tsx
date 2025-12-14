@@ -1,4 +1,4 @@
-import Identity from './pages/identity'
+import Region from './pages/region'
 import './App.css'
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <div>
-        <Identity/>
+        <Region/>
       </div>
     </>
   )
