@@ -1,43 +1,56 @@
-/* Remova todas as regras #home-root se você não as estiver usando.
-   Se estiver usando, use apenas as regras abaixo para o container da região. */
-
-/* Container Principal para o Layout de Notebook (TOP-ALIGNED) */
 .region-container {
-  background-color: #FFFFFF;
   min-height: 100vh;
-  width: 100vw;
-  
-  /* CONFIGURAÇÃO DE FLEXBOX PRINCIPAL (Corrigido: Adiciona GAP aqui!) */
+  background: #FFFFFF;
   display: flex;
-  flex-direction: column; 
-  align-items: center; 
-  justify-content: flex-start; /* Alinha no topo */
-  
-  padding: 40px 20px; /* Padding no topo e nas laterais */
+  justify-content: center;
 }
 
-/* Configura o Bloco de Conteúdo (Limita a largura em telas grandes) */
-.region-container > * {
+.region-content {
   width: 100%;
-  max-width: 800px; 
-  margin: 0 auto; 
-  /* O 'gap: 0px;' aqui foi removido pois ele não faz nada neste seletor */
+  max-width: 360px;
+  padding: 32px 20px;
 }
 
-/* Título */
 .title {
-    color: #333;
-    margin-bottom: 40px; /* Mantém o espaço abaixo do título */
-    font-size: 32px;
-    text-align: left;
+  font-size: 40px;
+  font-weight: 700;
+  color: #1c1c1c;
+  margin-bottom: 30px;
 }
 
-/* Onde estava a distância entre os campos (input-group) */
-.input-group {
-    margin-bottom: 15px; /* Diminua este valor para aproximar os campos */
+.subtitle {
+  font-size: 24px;
+  color: #8a8a8a;
+  margin-bottom: 32px;
 }
 
-/* Onde estava a distância antes do botão */
-.button-wrapper {
-    margin-top: 15px; /* Diminua este valor para aproximar o botão */
+.select-card {
+  background: #ededed;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+}
+
+.select-icon {
+  font-size: 42px;
+  margin-right: 12px;
+  color: #555;
+}
+
+.select-card select {
+  border: none;
+  background: transparent;
+  width: 100%;
+  font-size: 24px;
+  outline: none;
+  appearance: none;
+  color: #333;
+  cursor: pointer;
+  margin-bottom: 16px; 
+}
+
+button {
+  margin-top: 40px; 
 }
