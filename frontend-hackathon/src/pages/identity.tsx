@@ -12,7 +12,7 @@ function Identity(){
             <h1 className='tex'> Identidade Confirmada </h1>
 
             <Button 
-                label="Entrar" 
+                label="Próximo" 
                 onClick={handleButtonClick} 
              />
     </div>
