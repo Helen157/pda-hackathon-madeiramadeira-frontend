@@ -77,10 +77,9 @@ return (
         }}
       />
 
-      {/* 3. Texto Auxiliar (Instrução Dinâmica) */}
+      {/* 3. Texto Auxiliar */}
       <div className="absolute bottom-10 w-full text-center text-white text-base font-bold z-20">
         Centralize seu rosto!
-        {/* Aqui entrará o texto dinâmico (ex: "Olhe para a esquerda") após a validação */}
       </div>
 
     </div>
