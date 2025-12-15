@@ -91,7 +91,7 @@ const ExperienceProofScreen: React.FC = () => {
         </h1>
         {/* Descrição Nova */}
         <p style={{ fontSize: '14px', color: '#6B7280', marginBottom: '16px' }}>
-          Comprove sua experiência profissional como eletricista.
+          Comprove sua experiência profissional!
         </p>
         <p style={{ fontSize: '14px', color: '#6B7280' }}>
           Você pode enviar registros da carteira de trabalho, contratos firmados e certificados.
