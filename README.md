@@ -1,76 +1,66 @@
-# React + TypeScript + Vite
+# 🧩 Onboarding Inteligente — Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend do projeto **Onboarding Conversacional Inteligente**, desenvolvido durante o **Hackathon 2025 da Programadores do Amanhã**, em parceria com o desafio da **MadeiraMadeira**.
 
-Currently, two official plugins are available:
+A aplicação faz parte de uma solução baseada em **WhatsApp + Micro-Frontends**, com foco em **reduzir fricção**, **aumentar conversão** e **garantir segurança** no cadastro de prestadores de serviço.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Tecnologias Utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React (Vite)
+- TypeScript
+- HTML5 / CSS
+- Web APIs 
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🧠 Conceito da Solução
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+O frontend é composto por **micro-telas (micro-frontends)**, acionadas conforme o avanço da jornada do usuário no chatbot.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Cada tela resolve um único problema, como:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Verificação facial (prova de vida)
+- Confirmação de identidade
+- Aceite de contrato
+- Visualização de informações pós-aprovação
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Essas telas são abertas via link, sem necessidade de download de aplicativo.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## ▶️ Como Rodar o Projeto Localmente
 
-Projeto desenvolvido no Hackathon 2025 PdA
+### 1️⃣ Acesse a pasta do frontend
+```bash
+cd frontend-hackathon
+npm install
+npm run dev
+http://localhost:5173
 
+## 🔗 Integração com Backend
+
+Este frontend foi projetado para ser integrado com um backend em FastAPI, responsável por:
+
+- Orquestrar o fluxo do chatbot
+
+- Integrar com IA generativa
+
+- Realizar validações de segurança
+
+- Controlar a navegação entre os micro-frontends
+
+A integração ocorre via APIs REST e links dinâmicos enviados pelo chatbot.
+
+👥 Time
+
+Squad 3 — Hackathon 2025
+
+- Helen Gonçalves - Líder / Dev Front-end
+- Lucy Lima - Dev Back-end
+- Sabrina Marques - Dev Front-end
+- Daniel Alves - Dev Back e Front-end
+- Flaviano Kiffer - Designer
+
+Instituto Programadores do Amanhã
